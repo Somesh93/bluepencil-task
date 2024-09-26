@@ -11,16 +11,16 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom Part */}
-        <div className="flex justify-between items-center py-4 border-t border-gray-700">
+        <div className="flex flex-col md:flex-row justify-between items-center py-4 border-t border-gray-700">
           {/* Left Navigation */}
-          <nav className="flex space-x-4">
+          <nav className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 text-center md:text-left">
             <a href="/privacy" className="hover:text-gray-400">Privacy Policy</a>
             <a href="/terms" className="hover:text-gray-400">Terms of Service</a>
             <a href="/contact" className="hover:text-gray-400">Contact Us</a>
           </nav>
 
           {/* Right Social Icons */}
-          <div className="flex space-x-4">
+          <div className="flex justify-center space-x-4 mt-4 md:mt-0">
             <a href="https://facebook.com" className="hover:text-gray-400">
               <FontAwesomeIcon icon={faFacebook} size="lg" />
             </a>
