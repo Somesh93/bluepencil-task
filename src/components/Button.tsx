@@ -8,8 +8,8 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ href, children, variant = 'solid' }) => {
   const baseClasses = "font-bold py-2 px-4 rounded transition-colors duration-300";
-  const solidClasses = "bg-[#111B47] hover:bg-[#505F98] text-white";
-  const outlineClasses = "bg-transparent border-2 border-[#111B47] text-[#111B47] hover:bg-[#505F98] hover:text-white";
+  const solidClasses = "bg-[#111B47] text-white border-2 border-transparent hover:bg-transparent hover:text-[#111B47] hover:border-[#111B47]";
+  const outlineClasses = "bg-transparent border-2 border-[#111B47] text-[#111B47] hover:bg-[#111B47] hover:text-white hover:border-transparent";
 
   const classes = `${baseClasses} ${variant === 'solid' ? solidClasses : outlineClasses}`;
 

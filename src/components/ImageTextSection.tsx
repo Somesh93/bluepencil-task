@@ -1,5 +1,6 @@
 import React from 'react';
-import Button from './Button'; // Adjust the import path as necessary
+import Image from 'next/image';
+import Button from './Button';
 
 interface ImageTextSectionProps {
   imageSrc: string;
@@ -21,11 +22,18 @@ const ImageTextSection: React.FC<ImageTextSectionProps> = ({
   reverse = false,
 }) => {
   return (
-    <section className="w-full min-h-[70vh] flex flex-col md:flex-row">
+    <section className="container mx-auto w-full min-h-[60vh] flex flex-col md:flex-row">
       {reverse ? (
         <>
           <div className="w-full md:w-1/2 flex items-center justify-center p-4 md:p-8">
-            <img src={imageSrc} alt="Section Image" className="h-48 md:h-auto object-contain" />
+            <Image
+              src={imageSrc}
+              alt="Section Image"
+              width={500} // Adjust the width as needed
+              height={500} // Adjust the height as needed
+              className="h-48 md:h-auto object-contain"
+              priority={reverse} // Load the image eagerly if reverse is true
+            />
           </div>
           <div className="w-full md:w-1/2 flex flex-col items-start justify-center text-left p-4 md:p-8">
             <h2 className="text-3xl md:text-4xl font-medium leading-tight md:leading-normal mb-4 text-[#091133]">{title}</h2>
@@ -49,7 +57,14 @@ const ImageTextSection: React.FC<ImageTextSectionProps> = ({
             )}
           </div>
           <div className="w-full md:w-1/2 flex items-center justify-center p-4 md:p-8">
-            <img src={imageSrc} alt="Section Image" className="h-48 md:h-auto object-contain" />
+            <Image
+              src={imageSrc}
+              alt="Section Image"
+              width={500} // Adjust the width as needed
+              height={500} // Adjust the height as needed
+              className="h-48 md:h-auto object-contain"
+              priority={!reverse} // Load the image eagerly if reverse is false
+            />
           </div>
         </>
       )}
