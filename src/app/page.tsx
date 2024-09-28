@@ -109,7 +109,7 @@ mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla 
 mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim."
         showButton={true}
         buttonText="Purchase UI Kit"
-        button="#"
+        buttonHref="#"
         reverse={true}
       />
 
