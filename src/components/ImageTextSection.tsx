@@ -22,7 +22,7 @@ const ImageTextSection: React.FC<ImageTextSectionProps> = ({
   reverse = false,
 }) => {
   return (
-    <section className="container mx-auto w-full min-h-[60vh] flex flex-col md:flex-row">
+    <section className="container mx-auto w-full min-h-[80vh] py-10 md:py-0 flex flex-col md:flex-row">
       {reverse ? (
         <>
           <div className="w-full md:w-1/2 flex items-center justify-center p-4 md:p-8">

@@ -62,7 +62,7 @@ const Header = () => {
             <a href="/" className="hover:text-gray-700">Home</a>
             <a href="/about" className="hover:text-gray-700">About</a>
             <a href="/contact" className="hover:text-gray-700">Contact</a>
-            <Button href="#" variant="solid">Buy Now</Button>
+            <Button href="#" variant="solid" width="160px" height="26px">Buy Now</Button>
           </nav>
         </div>
       )}

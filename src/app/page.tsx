@@ -67,7 +67,7 @@ export default function Home() {
           ))}
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 w-full">
           {heroSection.buttons.map((button, index) => (
-                <Button key={index} href={button.href} aria-label={button.text} variant={button.variant}>
+                <Button key={index} href={button.href} width="189px" height="36px" aria-label={button.text} variant={button.variant}>
                   {button.text}
                 </Button>
               ))}
@@ -84,6 +84,9 @@ export default function Home() {
         imageSrc={featureData.imageSrc}
         points={featureData.points}
         reverse={false} // Use reverse prop to change the order
+        textWidth="w-full md:w-1/2"
+        imageWidth="w-full md:w-1/2"
+        className="container md:mx-auto" // Pass additional classes here
       />
 
       <ImageTextSection
@@ -137,7 +140,7 @@ mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla 
             See, One price. Simple.
           </span> 
         </div>
-        <Button href="#" variant="solid" aria-label="Purchase">
+        <Button href="#" variant="solid" aria-label="Purchase" width="189px" height="36px">
           Purchase Now
         </Button>
       </section>

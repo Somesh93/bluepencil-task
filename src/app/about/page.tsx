@@ -43,13 +43,15 @@ export default function Page() {
       <Head>
         <title>About Page</title>
       </Head>
-      <section className="h-full my-10 md:my-48">
+      {/* <section className="h-full container my-5 md:my-20"> */}
+      <section className="h-full container my-5 md:my-20 flex items-center justify-center">
 
       <FeatureSection
         title={featureData.title}
         subtitle={featureData.subtitle}
         imageSrc={featureData.imageSrc}
         points={featureData.points}
+        reverse={false} // Use reverse prop to change the order
 
       />
    </section>

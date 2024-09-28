@@ -42,7 +42,7 @@ export default function Page() {
       <Head>
         <title>Contact Us</title>
       </Head>
-      <section className="h-full my-10 md:my-48">
+      <section className="h-full w-full my-5 md:my-20">
 
       <FeatureSection
         title={featureData.title}
