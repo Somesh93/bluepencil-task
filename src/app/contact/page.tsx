@@ -40,9 +40,9 @@ export default function Page() {
   return (
     <Layout>
       <Head>
-        <title>About Us</title>
+        <title>Contact Us</title>
       </Head>
-      <section className="h-full my-30">
+      <section className="h-full my-10 md:my-48">
 
       <FeatureSection
         title={featureData.title}

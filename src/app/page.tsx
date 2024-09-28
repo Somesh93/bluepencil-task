@@ -67,7 +67,7 @@ export default function Home() {
           ))}
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 w-full">
           {heroSection.buttons.map((button, index) => (
-                <Button key={index} href={button.href} variant={button.variant}>
+                <Button key={index} href={button.href} aria-label={button.text} variant={button.variant}>
                   {button.text}
                 </Button>
               ))}
@@ -109,11 +109,11 @@ mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla 
 mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim."
         showButton={true}
         buttonText="Purchase UI Kit"
-        buttonHref="#"
+        button="#"
         reverse={true}
       />
 
-      <section className="w-full min-h-screen flex flex-col items-center justify-center p-8 bg-[#E7ECFF] clipping md:clipping-lg">
+      <section className="w-full min-h-screen flex flex-col items-center justify-center p-8 bg-[#e7ecff91] clipping md:clipping-lg">
         <h1 className="text-3xl md:text-5xl font-medium text-[#091133] mb-6 text-center">
           A Price To Suit Everyone
         </h1>
@@ -135,9 +135,9 @@ mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla 
         <div className="text-center mb-6">
           <span className="text-base md:text-xl text-[#6F7CB2]">
             See, One price. Simple.
-          </span>
+          </span> 
         </div>
-        <Button href="#" variant="solid">
+        <Button href="#" variant="solid" aria-label="Purchase">
           Purchase Now
         </Button>
       </section>

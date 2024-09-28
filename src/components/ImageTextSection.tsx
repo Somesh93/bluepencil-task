@@ -39,7 +39,7 @@ const ImageTextSection: React.FC<ImageTextSectionProps> = ({
             <h2 className="text-3xl md:text-4xl font-medium leading-tight md:leading-normal mb-4 text-[#091133]">{title}</h2>
             <p className="text-lg md:text-xl mb-4 text-[#6F7CB2]">{body}</p>
             {showButton && (
-              <Button href={buttonHref} variant="solid">
+              <Button href={buttonHref} aria-label={buttonText}  variant="solid">
                 {buttonText}
               </Button>
             )}

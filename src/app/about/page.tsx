@@ -43,12 +43,17 @@ export default function Page() {
       <Head>
         <title>About Page</title>
       </Head>
+      <section className="h-full my-10 md:my-48">
+
       <FeatureSection
         title={featureData.title}
         subtitle={featureData.subtitle}
         imageSrc={featureData.imageSrc}
         points={featureData.points}
+
       />
+   </section>
+
     </Layout>
   );
 }
